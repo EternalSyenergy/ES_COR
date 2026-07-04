@@ -1,0 +1,14 @@
+const express = require('express');
+const authRoutes = require('./routes/auth.routes');
+const morgan = require('morgan');
+const cookieParser = require('cookie-parser');
+const app = express();
+app.use(express.json());
+app.use(morgan('dev'));
+app.use(cookieParser());
+
+// Everything in auth.routes.js is now prefixed with /api/auth
+// So your URLs will be: /api/auth/login, /api/auth/register, /api/auth/admin
+app.use('/api/auth', authRoutes);
+
+app.listen(3000);
