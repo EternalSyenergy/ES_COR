@@ -11,4 +11,7 @@ app.use(cookieParser());
 // So your URLs will be: /api/auth/login, /api/auth/register, /api/auth/admin
 app.use('/api/auth', authRoutes);
 
-app.listen(3000);
+
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));

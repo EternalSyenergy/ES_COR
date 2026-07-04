@@ -4,13 +4,37 @@ const nodemailer = require('nodemailer');
 const getTransporter = () => {
   // If you decide to switch to Amazon SES later, 
   // you just change this configuration object.
-  return nodemailer.createTransport({
-    service: 'gmail', 
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS, // App Password
-    },
-  });
+
+
+if( process.env.NODE_ENV=="production"){
+
+
+        return nodemailer.createTransport({
+            host: process.env.AWS_SES_HOST,
+            port: parseInt(process.env.AWS_SES_PORT || "587"),
+            secure: false, // true for 465, false for 587
+            auth: {
+              user: process.env.AWS_SES_USER,
+              pass: process.env.AWS_SES_PASS,
+            },
+          });
+
+        }else{
+
+          return nodemailer.createTransport({
+            service: 'gmail', 
+            auth: {
+              user: process.env.EMAIL_USER,
+              pass: process.env.EMAIL_PASS, // App Password
+            },
+          });
+
+
+}
+
+
+  
+
 };
 
 const sendOtpEmail = async (email, otp) => {
