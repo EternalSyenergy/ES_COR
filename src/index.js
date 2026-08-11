@@ -1,6 +1,8 @@
 // import cors from "cors";
 const express = require('express');
 const authRoutes = require('./routes/auth.routes');
+const cameraRoutes = require("./routes/camera.routes");
+
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
@@ -22,6 +24,7 @@ app.use(cors());
 // So your URLs will be: /api/auth/login, /api/auth/register, /api/auth/admin
 app.use('/api/auth', authRoutes);
 
+app.use("/api/cameras", cameraRoutes);
 
 
 const port = process.env.PORT || 3000;
