@@ -3,6 +3,7 @@ const express = require('express');
 const authRoutes = require('./routes/auth.routes');
 const cameraRoutes = require("./routes/camera.routes");
 const reportRoutes = require("./routes/report.routes");
+const userRoutes = require("./routes/user.routes");
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
@@ -38,6 +39,8 @@ app.use(
     "/api/reports",
     reportRoutes
 );
+
+app.use("/api/users", userRoutes);
 
 
 const port = process.env.PORT || 3000;
