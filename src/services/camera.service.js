@@ -127,7 +127,7 @@ const cameras = [
     name: "Production Camera 01",
     location: "Production Area A",
     status: "Online",
-    streamUrl: "https://drive.google.com/file/d/1iNVP0Be4n3QYxfGVwLThZw_QxNOPpFSI/view?usp=drivesdk/preview",
+    streamUrl: "https://api.hisplayer.com/media/hisplayer/c7a1056e-8cbb-44f7-8d4f-b5184077817a/master.m3u8?contentKey=FF2chg3F",
   },
 
   {
@@ -135,7 +135,7 @@ const cameras = [
     name: "Production Camera 01",
     location: "Production Area A",
     status: "Online",
-    streamUrl: "https://drive.google.com/file/d/1GeR7_-6iFLo95l3lhtjxQ2gXIgP-uWJ-/view?usp=drivesdk/preview",
+    streamUrl: "https://api.hisplayer.com/media/hisplayer/c7a1056e-8cbb-44f7-8d4f-b5184077817a/master.m3u8?contentKey=WYlChg3I",
   },
 
   {
