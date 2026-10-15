@@ -127,7 +127,7 @@ const cameras = [
     name: "Production Camera 01",
     location: "Production Area A",
     status: "Online",
-    streamUrl: "http://192.168.0.103:3002/hls/camera01/index.m3u8",
+    streamUrl: "https://drive.google.com/file/d/1iNVP0Be4n3QYxfGVwLThZw_QxNOPpFSI/view?usp=drivesdk",
   },
 
   {
@@ -135,7 +135,7 @@ const cameras = [
     name: "Production Camera 01",
     location: "Production Area A",
     status: "Online",
-    streamUrl: "http://192.168.0.103:3002/hls/camera01/index.m3u8",
+    streamUrl: "https://drive.google.com/file/d/1GeR7_-6iFLo95l3lhtjxQ2gXIgP-uWJ-/view?usp=drivesdk",
   },
 
   {
