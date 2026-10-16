@@ -124,16 +124,16 @@
 const cameras = [
   {
     cameraId: "CAM-001",
-    name: "Block 2 Canteen back View",
-    location: "Block 2 Canteen back Camera",
+    name: "JE Block 2 Canteen back View",
+    location: "JE Block 2 Canteen back Camera",
     status: "Online",
     streamUrl: "https://api.hisplayer.com/media/hisplayer/c7a1056e-8cbb-44f7-8d4f-b5184077817a/master.m3u8?contentKey=FF2chg3F",
   },
 
   {
     cameraId: "CAM-002",
-    name: "JE Maingate View",
-    location: "Maingate Camera",
+    name: "JE Main Gate View",
+    location: "Main Gate Camera",
     status: "Online",
     streamUrl: "https://api.hisplayer.com/media/hisplayer/c7a1056e-8cbb-44f7-8d4f-b5184077817a/master.m3u8?contentKey=WYlChg3I",
   },
