@@ -124,27 +124,27 @@
 const cameras = [
   {
     cameraId: "CAM-001",
-    name: "Production Camera 01",
-    location: "Production Area A",
+    name: "Block 2 Canteen back View",
+    location: "Block 2 Canteen back Camera",
     status: "Online",
     streamUrl: "https://api.hisplayer.com/media/hisplayer/c7a1056e-8cbb-44f7-8d4f-b5184077817a/master.m3u8?contentKey=FF2chg3F",
   },
 
   {
-    cameraId: "CAM-001",
-    name: "Production Camera 01",
-    location: "Production Area A",
+    cameraId: "CAM-002",
+    name: "JE Maingate View",
+    location: "Maingate Camera",
     status: "Online",
     streamUrl: "https://api.hisplayer.com/media/hisplayer/c7a1056e-8cbb-44f7-8d4f-b5184077817a/master.m3u8?contentKey=WYlChg3I",
   },
 
-  {
-    cameraId: "CAM-002",
-    name: "Production Camera 01",
-    location: "Production Area A",
-    status: "Online",
-    streamUrl: "http://192.168.0.103:3002/hls/camera01/index.m3u8",
-  },
+  // {
+  //   cameraId: "CAM-002",
+  //   name: "Production Camera 01",
+  //   location: "Production Area A",
+  //   status: "Online",
+  //   streamUrl: "http://192.168.0.103:3002/hls/camera01/index.m3u8",
+  // },
 ];
 
 /**
